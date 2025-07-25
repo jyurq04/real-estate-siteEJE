@@ -17,12 +17,16 @@ const FeatureGrid = ({ title, items }) => {
             {item.image && (
               <img src={item.image} alt={`${item.title} image`} />
             )}
+            {/* Title overlay */}
             <div className="title">
               <h2>{item.title}</h2>
-                <div className="caption">
-                  {item.subtext && <p>{item.subtext}</p>}
-                </div>
             </div>
+            {/* Caption overlay (must be separate from title) */}
+            {item.subtext && (
+              <div className="caption">
+                <p>{item.subtext}</p>
+              </div>
+            )}
           </div>
         ))}
       </div>

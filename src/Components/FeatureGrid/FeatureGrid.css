@@ -1,6 +1,7 @@
 .feature-grid-container {
   margin: 80px auto;
   text-align: center;
+  padding: 0 1rem;
 }
 
 .feature-grid-header {
@@ -8,92 +9,94 @@
 }
 
 .feature-grid {
-  margin: 80px auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 90%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
+  max-width: 1400px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .feature-card {
-  flex-basis: 19%;
-  border-radius: 1px;
   position: relative;
-  min-width: 400px;
-  max-width: 500px;
+  flex: 1 1 300px;
+  min-width: 300px;
+  max-width: 400px;
   margin: 0 auto;
+  border-radius: 1px;
+  overflow: hidden;
 }
 
 .feature-card img {
   width: 100%;
   height: 400px;
-  border-radius: 1px;
   object-fit: cover;
   display: block;
-  filter: brightness(85%); /* Darkens the image */
+  border-radius: 1px;
+  filter: brightness(85%);
 }
 
-.caption {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.432);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: #fff;
-  cursor: pointer;
-  transition: all 0.4s ease;
-  pointer-events: none; /* So that only the card hover triggers */
-}
-
-.caption p {
-  font-size: 95%;
-}
-
+/* Title overlay */
 .title {
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   color: #fff;
-  cursor: pointer;
+  pointer-events: none;
   transition: all 0.4s ease;
-  pointer-events: none; /* So that only the card hover triggers */
 }
 
-.title h2{
+.title h2 {
   font-size: 2rem;
   margin: 0;
   transition: transform 0.4s ease;
 }
 
-.feature-card:hover{
+/* Caption overlay with persistent dark background */
+.caption {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.432); /* Always present */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.caption p {
+  font-size: 95%;
+  margin: 0;
+  transform: translateY(20px);
+  transition: transform 0.4s ease;
+}
+
+/* Hover effects */
+.feature-card:hover {
   cursor: pointer;
 }
 
 .feature-card:hover .title {
-  transform: translateY(-40px); /* Move title text up */
+  transform: translateY(-40px);
 }
 
 .feature-card:hover .caption {
   opacity: 1;
-  padding-top: 0;
-  transform: translateY(40px); /* Move caption text down */
 }
 
-/* Optional: Button Styling */
+.feature-card:hover .caption p {
+  transform: translateY(0);
+}
+
+/* Button Styling */
 .btn2 {
   margin-top: 40px;
   padding: 10px 30px;
@@ -102,8 +105,17 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 1rem;
 }
 
 .btn2:hover {
   background-color: #0018d4;
+}
+
+/* Responsive: stack cards on small screens */
+@media (max-width: 900px) {
+  .feature-card {
+    flex: 1 1 100%;
+    max-width: 90%;
+  }
 }

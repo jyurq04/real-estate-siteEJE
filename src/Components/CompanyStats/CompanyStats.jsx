@@ -4,7 +4,7 @@ import "./CompanyStats.css";
 const CompanyStats = () => {
   return (
     <div className="company-stats lp-vertical-paddings">
-      <div className="lp-container">
+      <div className="lp-container-stats">
         <div className="lp-title-group">
           <h2
             className="lp-h2"
