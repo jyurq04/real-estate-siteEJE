@@ -22,7 +22,7 @@ const neighborhood = [
     walkScore: null,
     bikeScore: null,
     transitScore: null,
-    restaurants: [[Name: ,Link: ,Miles: ,Reviews: ,Rating:]],
+    // restaurants: [[Name: ,Link: ,Miles: ,Reviews: ,Rating:]],
     shopping: [],
     active: [],
     beauty: [],
