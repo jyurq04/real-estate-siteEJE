@@ -216,6 +216,7 @@
 .lp-container {
   position: relative;
   padding: 20px;
+}
 
 .contact-form__container {
   display: flex;
