@@ -29,7 +29,7 @@
 }
 
 .contact-form__header__title span {
-  color: #ff5c5c;
+  color: #00b318;
   font-family: 'Italiana', serif;
   font-size: 10rem;
 }
@@ -96,7 +96,7 @@
 
 .lp-tcr-message a {
   text-decoration: underline;
-  color: #0077cc;
+  color: #00b318;
 }
 
 .link-btn {
@@ -142,7 +142,7 @@
 }
 
 .exit-button:hover {
-  color: #ff3b3b;
+  color: #00b318;
 }
 
 .social-media-icons {
@@ -179,13 +179,13 @@
   width: 15px;
   height: 15px;
   transition: filter 0.3s ease;
-  filter: brightness(0) saturate(100%) invert(30%) sepia(80%) saturate(500%) hue-rotate(180deg);
+  filter: brightness(0) saturate(100%) invert(47%) sepia(93%) saturate(2057%) hue-rotate(92deg);
 }
 
 .social-icons-list a:hover {
-  border-color: #0077cc;    /* Accent color on hover */
-  background-color: #0077cc;
-  box-shadow: 0 0 8px rgba(0,119,204,0.6);
+  border-color: #00b318; /* Vivid green */
+  background-color: #00b318;
+  box-shadow: 0 0 8px rgba(0, 179, 24, 0.6); /* RGB for #00b318 with 60% opacity */
 }
 
 .social-icons-list a:hover img {

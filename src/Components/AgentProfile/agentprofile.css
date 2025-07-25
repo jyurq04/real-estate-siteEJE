@@ -17,7 +17,7 @@
 }
 
 /* Left image column with fixed size */
-.agent-profile__image {
+.agent-profile__image2 {
   flex-shrink: 0;
   width: 500px; /* Fixed width */
   height: auto;
@@ -26,7 +26,7 @@
   align-items: center;
 }
 
-.agent-image {
+.agent-image2 {
   width: 100%;
   height: auto;
   border-radius: 2px;
@@ -45,7 +45,7 @@
 }
 
 .agent-name {
-  font-size: 44px;
+  font-size: 50px;
   font-weight: bold;
   margin-bottom: 12px;
 }
@@ -71,8 +71,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 2%;
-  border-top: 2px solid #ccc;
-  border-bottom: 2px solid #ccc;
+  border-top: 2px solid #000000;  /* green border */
+  border-bottom: 2px solid #000000;
 }
 
 /* Social icons */
@@ -87,24 +87,31 @@
 
 .lp-socials__link {
   display: inline-flex;
-  width: 44px;
-  height: 44px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
-  background-color: #eaeaea;
+  background-color: #e0f5e7; /* light green tint */
   justify-content: center;
   align-items: center;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 1px solid transparent;
 }
 
 .lp-socials__link:hover {
-  background-color: #ccc;
+  background-color: #00b318;
+  border-color: #00b318;
+  box-shadow: 0 0 2px rgba(0, 179, 24, 0.6); /* green glow */
 }
 
+/* Icon placeholders */
 .lp-i {
   width: 22px;
   height: 22px;
   border-radius: 50%;
   display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .lp-i--linkedin {
@@ -133,8 +140,9 @@
 }
 
 .lp-link:hover {
-  color: #555;
+  color: #00b318;  /* changed from #555 to green */
 }
+
 .agent-contact {
   list-style: none;
   padding: 0;
@@ -147,14 +155,19 @@
 }
 
 .agent-link {
-  color: #333;
+  color: #00b318; /* green links */
   text-decoration: underline;
+}
+
+.agent-link:hover {
+  color: #007f1f; /* slightly darker green on hover */
 }
 
 .full-width {
   width: 100%;
   margin-top: 1rem;
 }
+
 /* Responsive stack for mobile */
 @media (max-width: 700px) {
   .agent-profile {

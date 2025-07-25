@@ -26,11 +26,11 @@ const Hero = ({
       <div className="hero" style={heroStyle}>
         <div className="hero-text">
           <p className="subtitle">{subtitle}</p>
-          <h1 style={{ fontSize: '65px' }}>{title}</h1>
+          <h1 className="title1" style={{ fontSize: '85px' }}>{title}</h1>
           <p className="description">{description}</p>
           {showButton && (
           <button
-            className="btn"
+            className="btn5"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
           >

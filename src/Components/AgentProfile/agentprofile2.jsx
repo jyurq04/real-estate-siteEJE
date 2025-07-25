@@ -14,7 +14,7 @@ const AgentProfile2 = () => {
         <div className="agent-profile__image">
           <img
             className="agent-image"
-            src="https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85/https://media-production.lp-cdn.com/media/pvfgt9uhhu7f2rywch2j"
+            src="https://images.pexels.com/photos/7693223/pexels-photo-7693223.jpeg"
             alt="Meet Emma"
           />
         </div>
@@ -32,12 +32,12 @@ const AgentProfile2 = () => {
                   <div className="contact-item">
                     <p className="contact-title">Primary phone</p>
                     <a className="agent-link" href="tel:(518) 578-1104" aria-label="call (518) 578-1104">
-                      (518) 578-1104
+                      (123) 456-7890
                     </a>
                   </div>
                   <div className="contact-item">
                     <p className="contact-title">License Number</p>
-                    #0999589
+                    #12345678
                   </div>
                 </div>
               </div>
@@ -46,16 +46,16 @@ const AgentProfile2 = () => {
               <div className="contact-row">
                 <p className="contact-title">Email</p>
                 <a className="agent-link" href="mailto:jessicawilliams@christiesrennj.com">
-                  jessicawilliams@christiesrennj.com
+                  emmaju@acreny.us
                 </a>
               </div>
 
               {/* Row 3: Full width */}
               <div className="contact-row">
                 <p className="contact-title">Address</p>
-                80 Hudson St,<br />
-                Hoboken,<br />
-                NJ 07030
+                2160 N Central Rd #111, <br />
+                Fort Lee, <br />
+                NJ 07024
               </div>
             </div>
           </div>

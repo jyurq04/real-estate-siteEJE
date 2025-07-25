@@ -10,6 +10,7 @@ import Neighborhoods from    './pages/Neighborhoods.jsx';
 // import NeighborhoodPage from './pages/NeighborhoodPage.jsx';
 import About from './pages/About.jsx';
 import ScrollToTop from './Components/ScrollToTop.jsx'
+import Team from './pages/Team.jsx';
 
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/neighborhoods" element={<Neighborhoods />} />
         <Route path="/about" element={<About />} />
         {/* <Route path="/neighborhoods/:path" element={<NeighborhoodPage />} /> */}
+        <Route path="/team" element={<Team />} />
 
         {/* Routes WITHOUT Layout (like Contact) */}
         <Route path="/contact" element={<Contact />} />

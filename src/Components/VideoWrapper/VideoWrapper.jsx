@@ -73,7 +73,7 @@ const VideoWrapper = () => {
         <p className="fade-text">{headlinePhrases[headlineIndex]}</p>
         <p className="description fade-text">{subheadingPhrases[subheadingIndex]}</p>
         <button
-          className="btn"
+          className="btn5"
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
         >

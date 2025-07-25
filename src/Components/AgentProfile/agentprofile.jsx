@@ -14,7 +14,7 @@ const AgentProfile = () => {
       <div className="agent-profile__image">
         <img
           className="agent-image"
-          src="https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85/https://media-production.lp-cdn.com/media/pvfgt9uhhu7f2rywch2j"
+          src="https://images.pexels.com/photos/7693223/pexels-photo-7693223.jpeg"
           alt="Meet Jessica"
         />
       </div>
