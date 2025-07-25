@@ -1,0 +1,57 @@
+.home-valuation-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%),
+    url("https://media-production.lp-cdn.com/media/gtyekz9gwyizy8amjc7w");
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+  padding: 0 200px;
+  
+  padding-top: 250px;
+}
+
+.home-valuation-title h2 {
+  color: white;
+  font-size: 5rem;
+  font-weight: 100;
+  margin: 0;
+}
+
+.search-wrapper {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.search-icon{
+  margin-right: 10px;
+}
+
+.search-icon-img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  padding-top: 2px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  font-size: 1.5rem;
+  border: none;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.btn3 {
+  font-size: 1.5rem;
+}
