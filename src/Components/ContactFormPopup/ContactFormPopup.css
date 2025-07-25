@@ -3,7 +3,7 @@
   bottom: 80px;
   right: 24px;
   width: 360px;
-  background-color: var(--backgroundColor);
+  background-color: white;
   color: var(--textColor);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
   border-radius: 10px;
@@ -15,6 +15,7 @@
 .lp-container {
   position: relative;
   padding: 20px;
+  background-color: white;
 }
 
 .contact-form__container {
@@ -40,7 +41,7 @@
   border-radius: 6px;
   border: 1px solid #ccc;
   font-size: 1rem;
-  background-color: #222;
+  background-color: #ffffff;
   color: #fff;
   outline: none;
 }
@@ -52,7 +53,6 @@
 .lp-input:focus {
   border-color: #888888;
   box-shadow: 0 0 8px #ffffff;
-  background-color: #111;
 }
 
 .lp-btn {
@@ -118,10 +118,11 @@
   cursor: pointer;
   line-height: 1;
   font-weight: bold;
+  color: black;
 }
 
 .close-btn:hover {
-  color: #adadad;
+  color: #000000;
 }
 
 .connect-btn {
@@ -215,7 +216,6 @@
 .lp-container {
   position: relative;
   padding: 20px;
-}
 
 .contact-form__container {
   display: flex;
