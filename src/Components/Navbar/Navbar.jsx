@@ -79,7 +79,7 @@ const Navbar = ({ isOpen, setIsOpen }) => {
               <Link to="/contact" className="nav-link" onClick={handleScrollToTop}>Contact</Link>
             </li>
             <li className="nav-item">
-              <a href="tel:1234567890" className="nav-link">(123) 456-7890</a>
+              <a href="tel:1234567890" className="nav-link">(201)-742-1625</a>
             </li>
             <li className="nav-item hamburger-wrapper">
               <button className="hamburger" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">

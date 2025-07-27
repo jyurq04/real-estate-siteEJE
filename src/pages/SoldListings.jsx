@@ -99,7 +99,7 @@ const SoldListings = () => {
       <div>
         <Hero2
           title="OUR SOLD LISTINGS"
-          description="Jade Mills features Beverly Hills property. Jade can find real estate in Beverly Hills, Bel Air, Malibu, CA & more"
+          description="Emma Ju features Bergen Counties property. Ju can find real estate in Alpine, Tenafly, Englewood Cliffs, NJ & more"
           showButton={false}
           backgroundImage='https://images.pexels.com/photos/2988860/pexels-photo-2988860.jpeg'
         />

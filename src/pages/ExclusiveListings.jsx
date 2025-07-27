@@ -101,7 +101,7 @@ const ExclusiveListings = () => {
       <div>
         <Hero2
           title="OUR EXCLUSIVE LISTINGS"
-          description="Jade Mills features Beverly Hills property. Jade can find real estate in Beverly Hills, Bel Air, Malibu, CA & more"
+          description="Emma Ju features Bergen Counties property. Ju can find real estate in Alpine, Tenafly, Englewood Cliffs, NJ & more"
           showButton={false}
           backgroundImage='https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg'
         />

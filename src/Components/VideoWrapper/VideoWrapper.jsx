@@ -8,9 +8,10 @@ const preheadlinePhrases = [
   '',
 ];
 
-
 const headlinePhrases = [
-  'ACRE NEW JERSEY REAL ESTATE',
+  <>
+    ACRE NEW JERSEY <br /> REAL ESTATE
+  </>,
   'EMMA JU ESTATES',
   'BERGEN COUNTY EXPERTS',
 ];

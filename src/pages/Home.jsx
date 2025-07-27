@@ -36,9 +36,9 @@ const Home = () => {
         <ServicesGrid/>
       </div>
 
-      <div className="container-type2">
+      {/* <div className="container-type2">
       <SplitSection1/>
-      </div>
+      </div> */}
 
       <div className='container-type2'>
         <ExclusiveListings/>
