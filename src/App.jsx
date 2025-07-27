@@ -11,6 +11,7 @@ import Neighborhoods from    './pages/Neighborhoods.jsx';
 import About from './pages/About.jsx';
 import ScrollToTop from './Components/ScrollToTop.jsx'
 import Team from './pages/Team.jsx';
+import Social from './pages/Social.jsx';
 
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         {/* <Route path="/neighborhoods/:path" element={<NeighborhoodPage />} /> */}
         <Route path="/team" element={<Team />} />
+        <Route path="/social" element={<Social />} />
 
         {/* Routes WITHOUT Layout (like Contact) */}
         <Route path="/contact" element={<Contact />} />
