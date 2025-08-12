@@ -115,8 +115,6 @@ const communities = [
   }
 ];
 
-
-
 const Neighborhoods = () => {
   return (
     <div>

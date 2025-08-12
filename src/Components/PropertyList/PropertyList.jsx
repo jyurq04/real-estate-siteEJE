@@ -1,4 +1,3 @@
-// src/Components/PropertyList/PropertyList.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './PropertyList.css';
@@ -14,8 +13,14 @@ const PropertyList = ({ properties = [] }) => {
 
   const totalPages = Math.ceil(properties.length / propertiesPerPage);
 
-  const handleClick = (id) => {
-    navigate(`/property/${id}`);
+  // Helper to generate a URL-friendly path from address
+  const generatePathFromAddress = (address) => {
+    return address.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+  };
+
+  const handleClick = (address) => {
+    const path = generatePathFromAddress(address);
+    navigate(`/property/${path}`);
   };
 
   return (
@@ -23,9 +28,9 @@ const PropertyList = ({ properties = [] }) => {
       <div className="property-grid">
         {currentProperties.map((property) => (
           <div
-            key={property.id}
+            key={property.address}  // Use address as unique key
             className="property-card"
-            onClick={() => handleClick(property.id)}
+            onClick={() => handleClick(property.address)}
           >
             <div className="property-image-container">
               <img
@@ -38,7 +43,7 @@ const PropertyList = ({ properties = [] }) => {
               <p className="property-address">{property.address}</p>
               <p className="property-price">${property.price.toLocaleString()}</p>
               <p className="property-info">
-                {property.bedrooms} Beds | {property.bathrooms} Baths | {property.sqft} sqft
+                {property.bedrooms} Beds | {property.fullBaths} Full Baths {property.halfBaths > 0 ? `| ${property.halfBaths} Half Baths` : ''}
               </p>
             </div>
           </div>

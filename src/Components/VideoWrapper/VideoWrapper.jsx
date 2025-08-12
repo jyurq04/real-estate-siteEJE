@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './VideoWrapper.css';
-
+import video from '../../assets/real-estate-video.mp4';
 
 const preheadlinePhrases = [
   'WELCOME TO',
@@ -44,6 +44,7 @@ const VideoWrapper = () => {
     return () => {
       clearInterval(headlineInterval);
       clearInterval(subheadingInterval);
+      clearInterval(preheadlineInterval);
     };
   }, []);
 
@@ -51,20 +52,16 @@ const VideoWrapper = () => {
     <div className="video-wrapper">
       <video
         className="background-video"
-        poster="https://res.cloudinary.com/luxuryp/videos/f_auto,q_auto/so_0,eo_0/qc2ltgqfyfkdelknxwl8/jade-mills-estates-coldwell-banker-beverly-hills-1.jpg"
-        loop
         muted
         autoPlay
         playsInline
+        loop
+        poster="https://res.cloudinary.com/luxuryp/videos/f_auto,q_auto/so_0,eo_0/qc2ltgqfyfkdelknxwl8/jade-mills-estates-coldwell-banker-beverly-hills-1.jpg"
       >
-        <source
-          src="https://res.cloudinary.com/luxuryp/video/upload/f_webm,q_auto/v1/qc2ltgqfyfkdelknxwl8"
-          type="video/webm"
-        />
-        <source
-          src="https://res.cloudinary.com/luxuryp/video/upload/f_mp4,q_auto/v1/qc2ltgqfyfkdelknxwl8"
-          type="video/mp4"
-        />
+        <source src={video} type="video/mp4" />
+        {/* Uncomment and add a webm video source if available */}
+        {/* <source src={videoWebm} type="video/webm" /> */}
+        Your browser does not support the video tag.
       </video>
 
       <div className="overlay" />

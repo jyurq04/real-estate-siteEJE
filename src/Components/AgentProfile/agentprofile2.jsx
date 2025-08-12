@@ -6,7 +6,7 @@ const AgentProfile2 = ({
   name,
   position,
   phone,
-  licenseNumber,
+  licenseNumbers,
   email,
   addressLines,
   socialLinks,
@@ -37,10 +37,14 @@ const AgentProfile2 = ({
                       {phone}
                     </a>
                   </div>
-                  <div className="contact-item">
-                    <p className="contact-title">License Number</p>
-                    {licenseNumber}
-                  </div>
+                    <div className="contact-item">
+                      <p className="contact-title">License Number(s)</p>
+                      {licenseNumbers && licenseNumbers.map((lic, idx) => (
+                        <div key={idx}>
+                          {lic.state}: {lic.number}
+                        </div>
+                      ))}
+                    </div>
                 </div>
               </div>
 

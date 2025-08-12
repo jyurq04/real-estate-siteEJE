@@ -34,9 +34,9 @@ const CompanyStats = () => {
           </h2>
         </div>
         <div className="company-stats__row company-stats__row--four">
-          <div className="company-stats__col">
+          {/* <div className="company-stats__col">
             <div className="stat-card">
-              <h3 className="stat-card__value jsValue">15 Years</h3>
+              <h3 className="stat-card__value jsValue">8 Years</h3>
               <p className="stat-card__title">
                 Proven Real Estate Experience
               </p>
@@ -46,22 +46,17 @@ const CompanyStats = () => {
             <div className="stat-card">
               <h3 className="stat-card__value jsValue">#1</h3>
               <p className="stat-card__title">
-                At Christie's International Real Estate Hoboken
+                At ACRE New Jersey
               </p>
             </div>
           </div>
           <div className="company-stats__col">
             <div className="stat-card">
               <h3 className="stat-card__value jsValue">1%</h3>
-              <p className="stat-card__title">Agents Worldwide</p>
+              <p className="stat-card__title">Agents in NJ</p>
             </div>
-          </div>
-          <div className="company-stats__col">
-            <div className="stat-card">
-              <h3 className="stat-card__value jsValue">1%</h3>
-              <p className="stat-card__title">Agents In New Jersey</p>
-            </div>
-          </div>
+          </div> */}
+
         </div>
       </div>
     </div>

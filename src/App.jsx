@@ -13,6 +13,7 @@ import ScrollToTop from './Components/ScrollToTop.jsx'
 import Team from './pages/Team.jsx';
 import Social from './pages/Social.jsx';
 import NeighborhoodPage from './pages/NeighborhoodPage.jsx';
+import TeamAboutPage from './pages/TeamAboutPage.jsx'; // Import the new TeamAboutPage
 
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         {/* <Route path="/neighborhoods/:path" element={<NeighborhoodPage />} /> */}
         <Route path="/team" element={<Team />} />
+        <Route path="/team/:agentId" element={<TeamAboutPage />} />
         <Route path="/social" element={<Social />} />
 
         {/* Routes WITHOUT Layout (like Contact) */}

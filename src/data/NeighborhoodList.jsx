@@ -1,6 +1,7 @@
 // src/data/NeighborhoodList.js
 import tempImg from '../assets/connectwithus.jpg'; // or any town-specific image
 
+
 export const neighborhoods = [
   {
     id: 'closter',

@@ -54,13 +54,14 @@ function About() {
 
         <TextContainer
           title="GET TO KNOW ME"
-          text={`Jessica Williams is a Real Estate Agent Associate with more than 15 years of experience in the industry. She specializes in residential real estate and is known for her ability to market the finest homes on the New Jersey waterfront. As a top sales producer in New Jersey, Jessica possesses a stellar sales resume that capitalizes on her industry acumen and includes record sales in the region’s most exceptional communities – The Brownstones at Port Imperial, The Avenue Collection, Henley on Hudson, and Maxwell Place.
+          text={`Your Trusted Real Estate Expert  
+            Patient. Considerate. Results-Driven.  
 
-          Jessica drives an innovative business that serves as a catalyst for showcasing home values throughout the local and regional market. Her clientele is impressive, as she is highly regarded by professional athletes, notable business executives, and real estate collectors. Jessica builds trust with each and every client, making their interests the central focus of each and every transaction. This loyalty is often rewarded through repeat clients and extensive referrals, creating an ever-growing network of high-profile clientele with very similar real estate needs.
+            Licensed in both New Jersey and New York, Emma is more than a top sales agent—she’s a seasoned market professional who understands homes from the ground up, from construction quality to architectural design details. Her background gives her a sharp eye for spotting true value, whether it’s a hidden gem in a competitive market or the perfect fit for a client’s vision.  
 
-          Throughout her real estate career, Jessica has been recognized for her superior skill and performance with industry recognitions, including being a NJ REALTORS® Circle of Excellence Sales Award each year since 2014, reaching Platinum from 2016–2023.
+            A tough negotiator who thrives under pressure, Emma consistently delivers top results. She leads a diverse, six-member team fluent in English, Spanish, and Mandarin, ensuring clients from all backgrounds feel understood and represented. Her team’s specialties range from Manhattan’s luxury high-rise condominiums to New Jersey’s new construction homes and upscale suburban properties.  
 
-          In her spare time, Jessica enjoys workout classes, and personal style, and fancies a nice Pinot Noir. She also loves spending time with her husband, Pete, and their four children: Preston, Rory, Lilliana, and Macy.`}
+            Having lived in both Manhattan and Bergen County, Emma offers unmatched local insight into the unique character, pace, and market trends of each area. Whether you’re seeking the excitement of city living or the comfort of a quiet neighborhood, she provides the expertise, network, and dedication needed to make it happen—always with proven results.`}
         />
       </div>
 
