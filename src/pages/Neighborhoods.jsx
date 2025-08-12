@@ -19,7 +19,7 @@ const communities = [
   {
     id: '2',
     name: 'Closter',
-    path: 'Closter',
+    path: 'closter',
     image: tempImg,
     description: 'Closter offers a rare blend of scenic beauty, top-ranked schools, and a brand-new shopping plaza that keeps everything you need within reach. It’s ideal for buyers seeking peaceful living without compromising modern convenience.'
   },

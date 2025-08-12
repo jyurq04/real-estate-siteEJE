@@ -1,0 +1,43 @@
+.table-wrapper {
+  padding: 2rem;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.table-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.custom-table th {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+  padding: 0.5rem 1rem; /* tighter padding for headers */
+  font-weight: 700;
+  background-color: transparent;
+  height: auto;
+  text-align: left;
+}
+
+.custom-table td {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+  padding: 1.5rem 1rem; /* more padding for taller cells */
+  text-align: left;
+}
+
+.custom-table th {
+  font-weight: 700; /* bold header */
+  background-color: transparent; /* no background */
+}

@@ -12,6 +12,7 @@ import About from './pages/About.jsx';
 import ScrollToTop from './Components/ScrollToTop.jsx'
 import Team from './pages/Team.jsx';
 import Social from './pages/Social.jsx';
+import NeighborhoodPage from './pages/NeighborhoodPage.jsx';
 
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/properties/featuredlist" element={<FeaturedListings />} />
         <Route path="/properties/soldlist" element={<SoldListings />} />
         <Route path="/neighborhoods" element={<Neighborhoods />} />
+        <Route path="/neighborhoods/:townId" element={<NeighborhoodPage />} />
         <Route path="/about" element={<About />} />
         {/* <Route path="/neighborhoods/:path" element={<NeighborhoodPage />} /> */}
         <Route path="/team" element={<Team />} />

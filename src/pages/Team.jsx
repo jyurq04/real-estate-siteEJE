@@ -5,7 +5,8 @@ import Hero from '../Components/Hero/Hero.jsx';
 import Hero2 from '../Components/Hero2/Hero2.jsx';
 import Footer from '../Components/Footer/Footer.jsx';
 import AgentCard from '../Components/AgentCard/AgentCard.jsx';
-import pfpTemp from '../assets/connectwithus.jpg';
+import emmapfp from '../assets/profilephotos/emmapfp.jpg';
+import jeffpfp from '../assets/profilephotos/jeffpfp.jpg';
 import './Team.css';
 
 function Team() {
@@ -22,10 +23,10 @@ function Team() {
 
       <div className='container-type4'>
         <div className="lead-agent-wrapper">
-          <AgentCard image='https://images.pexels.com/photos/7693223/pexels-photo-7693223.jpeg' name="Jessica Liu" label="Team Leader" />
+          <AgentCard image={emmapfp} name="Emma Ju" label="Team Leader" />
         </div>
         <div className="team-grid">
-          <AgentCard image='https://images.pexels.com/photos/33109594/pexels-photo-33109594.jpeg' name="Jeffery" label="Licensed Real Estate Salesperson" />
+          <AgentCard image={jeffpfp} name="Jeffery" label="Licensed Real Estate Salesperson" />
           <AgentCard image='https://images.pexels.com/photos/5971254/pexels-photo-5971254.jpeg' name="Rita" label="Licensed Real Estate Salesperson" />
           <AgentCard image='https://images.pexels.com/photos/33100431/pexels-photo-33100431.jpeg' name="Jason He" label="Licensed Real Estate Salesperson" />
           <AgentCard image='https://images.pexels.com/photos/10041233/pexels-photo-10041233.jpeg' name="Jenny" label="Licensed Real Estate Salesperson" />

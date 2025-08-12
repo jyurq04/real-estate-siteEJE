@@ -2,13 +2,12 @@ import React from 'react';
 import Layout from '../Components/Layout/Layout.jsx';
 import connectWithUsImg from '../assets/connectwithus.jpg';
 import ContactFormPopup from '../Components/ContactFormPopup/ContactFormPopup.jsx';
-import WelcomeStats from '../Components/Neighborhood/WelcomeStats/WelcomeStats.jsx'
-import DemographicStats from '../Components/Neighborhood/DemographicStats/DemographicStats.jsx'
 import NeighborhoodList from '../Components/NeighborhoodList/NeighborhoodList.jsx';
-import Hero from '../Components/Hero/Hero.jsx';
 import Hero2 from '../Components/Hero2/Hero2.jsx';
 import Footer from '../Components/Footer/Footer.jsx';
 import tempImg from '../assets/hero.jpg'; // Placeholder image for neighborhoods
+
+import TownInfo from '../Components/TownInfo/TownInfo.jsx'; // ✅ Import the combined component
 
 const neighborhood = [
   {
@@ -21,8 +20,8 @@ const neighborhood = [
       'Perched along the Hudson River, Fort Lee offers stunning NYC skyline views, luxury high-rises, and a diverse dining scene. With easy access to Manhattan and a thriving local culture, it’s a dream spot for commuters and cosmopolitan buyers alike.',
     totalPopulation: 39818,
     medianAge: 47.2,
-    populationDensity: 15815.6, // people per square mile
-    averageIncome: 65753, // per capita income
+    populationDensity: 15815.6,
+    averageIncome: 65753,
     "population0-9Years": 3784,
     "population10-17Years": 3138,
     "population18-24Years": 1868,
@@ -31,7 +30,7 @@ const neighborhood = [
     "population75+Years": 5108,
     "educationLevel-9th": null,
     "educationLevel-associate": null,
-    "educationLevel-bachelor": 64.8, // % with bachelor's or higher
+    "educationLevel-bachelor": 64.8,
     walkScore: 85,
     bikeScore: 35,
     transitScore: 60,
@@ -132,7 +131,6 @@ const neighborhood = [
   },
 ];
 
-
 function Social() {
   const currentNeighborhood = neighborhood[0];
 
@@ -140,41 +138,20 @@ function Social() {
     <div>
       <Layout />
 
-      <div>
-        <Hero2
-          title={currentNeighborhood.town}
-          description={currentNeighborhood.description}
-          showButton={false}
-          backgroundImage={currentNeighborhood.image}
-        />
-      </div>
+      <Hero2
+        title={currentNeighborhood.town}
+        description={currentNeighborhood.description}
+        showButton={false}
+        backgroundImage={currentNeighborhood.image}
+      />
 
-      <WelcomeStats
-        town={currentNeighborhood.town}
+      <TownInfo
         state={currentNeighborhood.state}
+        town={currentNeighborhood.town}
         totalPopulation={currentNeighborhood.totalPopulation}
         medianAge={currentNeighborhood.medianAge}
         populationDensity={currentNeighborhood.populationDensity}
         averageIncome={currentNeighborhood.averageIncome}
-      />
-
-      <DemographicStats
-        state={currentNeighborhood.state}
-        town={currentNeighborhood.town}
-        totalPopulation={currentNeighborhood.totalPopulation}
-        medianAge={currentNeighborhood.medianAge}
-        populationDensity={currentNeighborhood.populationDensity}
-        
-        populationAge0To9={currentNeighborhood["population0-9Years"]}
-        populationAge10To17={currentNeighborhood["population10-17Years"]}
-        populationAge18To24={currentNeighborhood["population18-24Years"]}
-        populationAge25To64={currentNeighborhood["population25-64Years"]}
-        populationAge65To74={currentNeighborhood["population65-74Years"]}
-        populationAge75Plus={currentNeighborhood["population75+Years"]}
-
-        educationLessThan9th={currentNeighborhood["educationLevel-9th"]}
-        educationAssociate={currentNeighborhood["educationLevel-associate"]}
-        educationBachelorOrHigher={currentNeighborhood["educationLevel-bachelor"]}
       />
 
       <ContactFormPopup />

@@ -5,6 +5,7 @@ import instagram_icon from '../../assets/instagram.png';
 import wechat_icon from '../../assets/wechat.png';
 import youtube_icon from '../../assets/youtube.png';
 import facebook_icon from '../../assets/facebook.png';
+import emmapfp from '../../assets/profilephotos/emmapfp.jpg'; // Placeholder image for agent profile
 import './AgentProfile.css';
 
 const AgentProfile = () => {
@@ -14,7 +15,7 @@ const AgentProfile = () => {
       <div className="agent-profile__image">
         <img
           className="agent-image"
-          src="https://images.pexels.com/photos/7693223/pexels-photo-7693223.jpeg"
+          src={emmapfp}
           alt="Meet Jessica"
         />
       </div>
